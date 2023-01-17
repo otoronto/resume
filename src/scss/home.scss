@@ -1,0 +1,392 @@
+$border-color :rgba(#ffff, .2);
+$border-header-color: rgba(#ffff, .3);
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url('/src/assets/Poppins/Poppins-Regular.ttf');
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    // font-family: sans-serif;
+    color: aliceblue;
+    font-family: 'Poppins Regular';
+    background-image: url('/src/images/flower.jpg');
+    // background-image: url('/src/images/tus.jpg');
+    //  background-image: url('/src/images/masa.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+
+}
+
+.about-box {
+
+    height: 700px;
+    width: 700px;
+    // color: white;
+
+    border: 1px $border-color solid;
+
+    transform: rotate(37deg);
+    position: absolute;
+    top: 50px;
+    left: -218px;
+    z-index: 100;
+
+    @media only screen and (max-width:800px) {
+        transform: rotate(0deg);
+        height: 120px;
+        width: 600px;
+        top: 30px;
+        left: 30px;
+        position: relative;
+        border: none;
+    }
+
+    &-container {
+        position: absolute;
+        top: 80px;
+        left: 90px;
+        transform: rotate(-37deg);
+        display: flex;
+        flex-direction: column;
+
+        @media only screen and (max-width:990px) {
+            top: 126px;
+            left: 152px;
+        }
+
+        @media only screen and (max-width:800px) {
+            top: 0px;
+            left: 0px;
+            transform: rotate(0deg);
+            position: relative;
+        }
+    }
+}
+
+// .menu-boxes {
+
+// }
+
+.resume-box {
+    transform: rotate(37deg);
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    left: 248px;
+    top: -249px;
+    border: 1px $border-color solid;
+    // transition: all .4s;
+
+    @media only screen and (max-width:800px) {
+        transform: rotate(0deg);
+        left: 30px;
+        top: 200px;
+        height: 100px;
+        width: 600px;
+        border: none;
+        border-top:1px $border-color solid ;
+    }
+
+   
+
+
+    &-header {
+        position: absolute;
+        transform: rotate(-37deg);
+        border-bottom: 2px $border-header-color solid;
+        padding-bottom: 5px;
+        width: 40px;
+        top: 275px;
+        left: 189px;
+        transition: all .3s;
+
+        @media only screen and (max-width:800px) {
+            transform: rotate(0deg);
+            top: 34px;
+            left: 10px;
+        }
+
+    }
+
+    &-resume {
+        font-family: inherit;
+        transform: rotate(-37deg);
+        position: absolute;
+        top: 280px;
+        left: 200px;
+
+        @media only screen and (max-width:800px) {
+            transform: rotate(0deg);
+            top: 28px;
+            left: 33px;
+            
+        }
+    }
+    &:hover p {
+        top: 318px;
+        @media only screen and (max-width:800px) {
+            top: 40px;
+        }
+
+    }
+
+    // &:hover {
+    //     @media only screen and (max-width:800px) {
+    //         transform: rotate(-37deg);
+    //     }
+    // }
+
+    &-container {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+
+.portfolio-box {
+    height: 400px;
+    width: 400px;
+    // background-color: brown;
+    transform: rotate(37deg);
+    position: absolute;
+    top: -9px;
+    left: 567px;
+    border: 1px $border-color solid;
+    // &-container{
+
+    @media only screen and (max-width:800px) {
+        transform: rotate(0deg);
+        left: 30px;
+        top: 300px;
+        height: 100px;
+        width: 600px;
+        border: none;
+        border-top:1px $border-color solid ;
+        
+    }
+
+    // }
+    &:hover p {
+        top: 309px;
+        @media only screen and (max-width:800px) {
+            top: 40px;
+        }
+    }
+
+    &-header {
+        position: absolute;
+        transform: rotate(-37deg);
+        border-bottom: 2px $border-header-color solid;
+        padding-bottom: 5px;
+        width: 40px;
+        top: 267px;
+        left: 31px;
+        transition: all .3s;
+
+        @media only screen and (max-width:800px) {
+            transform: rotate(0deg);
+            top: 34px;
+            left: 10px;
+        }
+
+    }
+
+    &-portfolio {
+        transform: rotate(-37deg);
+        text-align: start;
+        align-items: flex-end;
+        position: absolute;
+        top: 260px;
+        left: 38px;
+
+        @media only screen and (max-width:800px) {
+            transform: rotate(0deg);
+            left: 30px;
+            top: 28px;
+            left: 33px;
+        }
+
+    }
+
+
+}
+
+.blog-box {
+
+    height: 400px;
+    width: 400px;
+    transform: rotate(37deg);
+    position: absolute;
+    border: 1px $border-color solid;
+    top: 231px;
+    left: 886px;
+
+    @media only screen and (max-width:990px) {
+        top: 410px;
+        left: 459px;
+    }
+
+    @media only screen and (max-width:800px) {
+        transform: rotate(0deg);
+        left: 30px;
+        top: 400px;
+        height: 100px;
+        width: 600px;
+        border: none;
+        border-top:1px $border-color solid ;
+    }
+
+    &-container {}
+
+    &:hover p {
+        top: 280px;
+        @media only screen and (max-width:800px) {
+            top: 40px;
+        }
+    }
+
+    &-header {
+        position: absolute;
+        transform: rotate(-37deg);
+        border-bottom: 2px $border-header-color solid;
+        padding-bottom: 5px;
+        width: 40px;
+        top: 234px;
+        left: 36px;
+        transition: all .3s;
+
+        @media only screen and (max-width:800px) {
+            transform: rotate(0deg);
+            top: 34px;
+            left: 10px;
+        }
+
+    }
+
+    &-blog {
+        transform: rotate(-37deg);
+        position: absolute;
+        top: 250px;
+        left: 50px;
+
+        @media only screen and (max-width:800px) {
+            transform: rotate(0deg);
+            top: 28px;
+            left: 33px;
+        }
+    }
+}
+
+.contact-box {
+
+    height: 400px;
+    width: 400px;
+    transform: rotate(37deg);
+    position: absolute;
+    border: 1px $border-color solid;
+    top: -88px;
+    left: 1126px;
+
+    @media only screen and (max-width:1290px) {
+        top: 410px;
+        left: 461px;
+    }
+
+    @media only screen and (max-width:990px) {
+        top: 728px;
+        left: 221px;
+    }
+
+    @media only screen and (max-width:800px) {
+        transform: rotate(0deg);
+        width: 600px;
+        left: 30px;
+        top: 500px;
+        height: 100px;
+        border: none;
+        border-top:1px $border-color solid ;
+        
+        
+
+    }
+
+    // &-container {
+    //     background-color: aqua;
+    // }
+    &:hover p {
+        top: 309px;
+
+        @media only screen and (max-width:1290px) {
+            top: 142px;
+        }
+        
+        @media only screen and (max-width:800px) {
+            top: 40px;
+        }
+
+    }
+
+    &-header {
+        position: absolute;
+        transform: rotate(-37deg);
+        border-bottom: 2px $border-header-color solid;
+        padding-bottom: 5px;
+        width: 40px;
+        top: 266px; //99
+        left: 47px; //56
+        transition: all .3s;
+
+        @media only screen and (max-width:1290px) {
+            top: 99px;
+            left: 47px;
+        }
+
+        @media only screen and (max-width:800px) {
+            transform: rotate(0deg);
+            top: 34px;
+            left: 10px;
+        }
+
+    }
+
+    &-contact {
+        transform: rotate(-37deg);
+        position: absolute;
+        top: 268px;
+        left: 56px;
+
+        @media only screen and (max-width:1290px) {
+            top: 101px;
+        }
+
+        @media only screen and (max-width:800px) {
+            transform: rotate(0deg);
+            top: 28px;
+            left: 33px;
+        }
+
+    }
+}
+
+.box-item {
+    transition: all .2s;
+
+    &:hover {
+        background-color: rgba($color: #000000, $alpha: .2);
+        transform: scale(.95) rotate(37deg);
+        box-shadow: 0px 0px 0px 10px rgba($color: #ffff, $alpha: .2);
+        @media only screen and (max-width:800px) {
+            transform: rotate(0deg);
+        }
+    }
+
+    @media only screen and (max-width:800px) {
+        transform: rotate(0deg);
+    }
+
+}
