@@ -1,0 +1,21 @@
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-weight: bolder;
+    font-size: 18px;
+    background-color: darkgray;
+    width: 100%;
+    position:sticky;
+    top: 0;
+    
+&-item{
+    padding: 10px;
+    cursor: pointer;
+
+    //TODO
+    position: relative;
+    z-index: 200;
+}
+}

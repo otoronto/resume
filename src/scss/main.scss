@@ -1,17 +1,42 @@
 
 @import './home.scss';
+@import './SideScreen.scss';
+@import './navbar.scss';
+@import './resume.scss';
+
+:root {
+  --color-primary: #eb2f64;
+  --color-primary-light: #FF3366;
+  --color-primary-dark: #BA265D;
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+
+  --line: 1px solid var(--color-grey-light-2);
+
+  --shadow-light : 0 2rem 5rem rgba(0, 0, 0, .06);
+}
+
 
 *, body
  {
   margin: 0;
+
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .App {
   // background-color: rgb(29, 90, 69);
   height: 100vh;
   width: 100wh;
-  // overflow:hidden;
+  overflow:hidden;
+  position: relative;
 }

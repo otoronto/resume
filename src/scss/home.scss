@@ -4,6 +4,10 @@ $border-header-color: rgba(#ffff, .3);
     font-family: 'Poppins Regular';
     src: url('/src/assets/Poppins/Poppins-Regular.ttf');
 }
+@font-face {
+    font-family: 'Poppins Light';
+    src: url('/src/assets/Poppins/Poppins-Light.ttf');
+}
 
 .container {
     display: flex;
@@ -12,17 +16,32 @@ $border-header-color: rgba(#ffff, .3);
     // font-family: sans-serif;
     color: aliceblue;
     font-family: 'Poppins Regular';
-    background-image: url('/src/images/flower.jpg');
-    // background-image: url('/src/images/tus.jpg');
+    // background-image: url('/src/images/flower.jpg');
+    // background-image: url('/src/images/phone.avif');
     //  background-image: url('/src/images/masa.jpeg');
+    //  background-image: url('/src/images/matrix.avif');
+    //  background-image: url('/src/images/tus.jpg');
+     background-image: url('/src/images/lamba.avif');
+
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center center;
+
+    &-side{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
 
 }
+.overlay{
+height: 100%;
+width: 100%;
+// background-color: rgba(#000,.55);
+}
+
 
 .about-box {
-
     height: 700px;
     width: 700px;
     // color: white;
@@ -33,11 +52,15 @@ $border-header-color: rgba(#ffff, .3);
     position: absolute;
     top: 50px;
     left: -218px;
-    z-index: 100;
+    transition: opacity 1s;
+   
+    &-side {
+        border: none;
+    }
 
     @media only screen and (max-width:800px) {
         transform: rotate(0deg);
-        height: 120px;
+        height: 150px;
         width: 600px;
         top: 30px;
         left: 30px;
@@ -52,24 +75,27 @@ $border-header-color: rgba(#ffff, .3);
         transform: rotate(-37deg);
         display: flex;
         flex-direction: column;
-
         @media only screen and (max-width:990px) {
             top: 126px;
             left: 152px;
         }
-
         @media only screen and (max-width:800px) {
             top: 0px;
             left: 0px;
             transform: rotate(0deg);
             position: relative;
+            z-index: 100;
         }
     }
 }
 
-// .menu-boxes {
 
-// }
+.menu-boxes {
+    transition: opacity 1s;
+    &.fade {
+        opacity: 0;
+    }
+}
 
 .resume-box {
     transform: rotate(37deg);

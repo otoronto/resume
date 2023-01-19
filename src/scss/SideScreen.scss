@@ -1,0 +1,22 @@
+
+.side-container{
+    background-color: #ffffff;
+    color: black;
+    opacity: 0;
+    width: 50%;
+    min-height: 100vh;
+     max-height: 100vh;
+    position: relative;
+    transition: all 1s;
+    overflow: scroll!important;
+    z-index: -2;
+
+    &.show{
+        opacity: 1;
+        z-index: 111;
+    }
+    @media only screen and (max-width:1600px) {
+        width: 70%;
+
+    }
+}
