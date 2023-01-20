@@ -1,16 +1,19 @@
-.resume {
 
+// @import './animations.scss';
+
+.resume {
         display: flex;
         flex-direction: column;
         margin: 0 6rem;
         color: rgb(60, 60, 60);
-
+        animation: display-fade 1s linear forwards;
     &-header {
         display: block;
 
         font-size: 30px;
         border-bottom: 1px rgb(189, 189, 189) solid;
-        padding: 2rem 0;
+        padding: .5rem 0;
+        margin-bottom: 2rem;
         letter-spacing: 2px;
     }
 
@@ -29,4 +32,104 @@
             line-height: 30px;
         }
     }
+    &-info{
+        font-family: 'Poppins Light';
+        font-weight: 100;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+        padding: .5rem 0;
+        border-bottom: 1px rgb(189, 189, 189) solid;
+        margin-bottom: 2rem;
+
+        &-column {
+            display: flex;
+            flex-direction: column;
+            line-height: 2rem;
+            // background-color: black;
+
+        }
+
+        &-title{
+            font-family: 'Poppins Regular';
+            font-weight: bolder;
+            margin-left: 1rem;
+        }
+    }
+    &-skill {
+        display: flex;
+        justify-content: start;
+        font-size: 18px;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+
+        & ul {
+            flex-grow: 1;
+            font-weight: 800;
+            font-family: Poppins Light;
+            line-height: 2rem;
+        }
+        & ul:nth-child(2) {
+            flex-grow: 2;
+            // background-color: black;
+        }
+    }
 }
+
+.exp {
+    padding-left: 3rem;
+    border-left: 1px #bdbdbd solid;
+    &-icon{
+        margin-left: -4.5rem;
+        margin-top: -1rem;
+        margin-bottom: 2rem;
+        //TODO
+        background-color: white;
+        width: min-content;
+    }
+    &-line{
+        display: flex;
+    }
+
+    &-block{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        & div{
+            height: 20px;
+        }
+        &-icon{
+            margin-left: -58px;
+            margin-bottom: -20px;
+            background-color: white;
+        }
+    }
+    &-title{
+        display: flex;
+        font-size: 18px;
+        font-family: Poppins Regular;
+        font-weight: bolder;
+    }
+    &-company{
+        font-family: Poppins Light;
+    }
+    &-period{
+        font-size: 16px;
+        color: var(--color-grey-dark-3);
+        margin-left: auto;
+
+        &::before{
+            padding-right: 1rem;
+            content: '/';
+            opacity: .5;
+        }
+    }
+    &-context {
+        font-family: Poppins Light;
+        font-weight: 100;
+    }
+}
+// div.resume-info div:nth-child(2) {
+// margin-left: 2rem;
+// }
+

@@ -1,6 +1,5 @@
 import React from 'react'
 import '../css/style.css';
-import { useNavigate, withRouter } from "react-router-dom";
 import { useState } from 'react';
 import SideScreen from '../components/SideScreen';
 
@@ -11,7 +10,6 @@ const Home = (props) => {
   const [show, setShow] = useState(false);
   const [content, setContent] = useState('');
 
-  console.log(show);
 
   const onClickBox =(content) => {
 
@@ -32,7 +30,7 @@ const Home = (props) => {
 
         </div>
         <div style={{display:'flex', justifyContent:'end'}}>
-          <SideScreen show={show} setShow={setShow} onFocus={setShow} content={content} />
+          <SideScreen show={show} setShow={setShow} onFocus={setShow} content={content} setContent={setContent}/>
         </div>
 
           <div className={`menu-boxes ${show?'fade':''}`}>

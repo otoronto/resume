@@ -9,6 +9,7 @@
     width: 100%;
     position:sticky;
     top: 0;
+    z-index: 3;
     
 &-item{
     padding: 10px;
@@ -16,6 +17,5 @@
 
     //TODO
     position: relative;
-    z-index: 200;
 }
 }
