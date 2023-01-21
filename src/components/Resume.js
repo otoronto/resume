@@ -2,6 +2,7 @@ import React from 'react'
 import IconCircle from '../icons/circle'
 import { ExperienceIcon } from '../icons/experience'
 import {EducationIcon} from '../icons/education'
+import IconCertificate from '../icons/certificate'
 
 const Resume = () => {
     // document.body.style.overflow='scroll';
@@ -57,8 +58,8 @@ const Resume = () => {
                             <IconCircle height='20px' width='20px' fill='#bdbdbd' />
                         </div>
                         <span className="exp-title">IT Consultant - Documentum 
-                            <span className='exp-company'>&emsp;PlanetGroup Turkey</span>
-                            <span className="exp-period">2021-2022 - 12 months</span>
+                            <span className='exp-company'>&emsp;PlanetGroup Turkey <span className="exp-period">2021-2022- 12 months</span></span>
+                            
                         </span>
                         <span className="exp-context">Information Services Consultant</span>
 
@@ -69,8 +70,8 @@ const Resume = () => {
                             <IconCircle height='20px' width='20px' fill='#bdbdbd' />
                         </div>
                         <span className="exp-title">QUALITY-PRODUCTION ENGINEER 
-                            <span className='exp-company'>&emsp;FORD OTOSAN AŞ.</span>
-                            <span className="exp-period">2019-2021 - 14 months</span>
+                            <span className='exp-company'>&emsp;FORD OTOSAN AŞ.<span className="exp-period">2019-2021 - 14 months</span></span>
+                            
                         </span>
                         <span className="exp-context">Paintshop production technologies engineer</span>
                     </div>
@@ -91,8 +92,8 @@ const Resume = () => {
                             <IconCircle height='20px' width='20px' fill='#bdbdbd' />
                         </div>
                         <span className="exp-title"> Mechanical Engineering
-                            <span className='exp-company'>&emsp;Istanbul Technical University</span>
-                            <span className="exp-period">2012-2018</span>
+                            <span className='exp-company'>&emsp;Istanbul Technical University<span className="exp-period">2012-2018</span></span>
+                            
                         </span>
 
                     </div>
@@ -104,15 +105,18 @@ const Resume = () => {
 
                 <div className='exp'>
                     <div className='exp-icon'>
-                        <ExperienceIcon size={'48'} fill='#bdbdbd' />
+                        <IconCertificate size={'48'} fill='#bdbdbd' />
                     </div>
 
                     <div className="exp-block">
                         <div className='exp-block-icon'>
                             <IconCircle height='20px' width='20px' fill='#bdbdbd' />
                         </div>
-                        <span className="exp-title"> ORACLE CERTIFICATE - JAVA SE 8 PROGRAMMER I
-                            <span  className='exp-period' style={{'position':'absolute','right':'6rem'}}>(86/100)</span>
+                        <span className="exp-title"> ORACLE CERTIFICATE - 
+                        <span>
+                        JAVA SE 8 PROGRAMMER I
+                            <span  className='exp-period' >(86/100)</span>
+                        </span>
                         </span>
 
                     </div>

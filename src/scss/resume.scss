@@ -7,6 +7,10 @@
         margin: 0 6rem;
         color: rgb(60, 60, 60);
         animation: display-fade 1s linear forwards;
+
+        @media only screen and (max-width:1200px) {
+            margin: 0 2rem;
+        }
     &-header {
         display: block;
 
@@ -15,21 +19,38 @@
         padding: .5rem 0;
         margin-bottom: 2rem;
         letter-spacing: 2px;
+
+        @media only screen and (max-width:1200px) {
+            font-size: 24px;
+            margin-bottom: 1.2rem;
+        }
     }
 
     &-intro {
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 100;
         font-family: 'Poppins Light';
         letter-spacing: 1px;
         line-height: 40px;
 
+        @media only screen and (max-width:1200px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        
         &-detail {
             font-size: 16px;
             font-family: 'Poppins Light';
             padding: 2rem 0;
             border-bottom: 1px rgb(189, 189, 189) solid;
             line-height: 30px;
+
+            @media only screen and (max-width:1200px) {
+                font-size: 15px;
+                line-height: 25px;
+                padding: 1rem 0;
+                margin-bottom: 1rem;
+            }
         }
     }
     &-info{
@@ -40,7 +61,15 @@
         justify-content: space-between;
         padding: .5rem 0;
         border-bottom: 1px rgb(189, 189, 189) solid;
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
+
+        @media only screen and (max-width:1200px) {
+            font-size: 15px;
+            margin-bottom: 4rem;
+        }
+        @media only screen and (max-width:800px) {
+        display: block;
+        }
 
         &-column {
             display: flex;
@@ -61,16 +90,22 @@
         justify-content: start;
         font-size: 18px;
         margin-left: 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
+        line-height: 2rem;
+        @media only screen and (max-width:1200px) {
+            font-size: 16px;
+            margin-bottom: 4rem;
+            line-height: 1.5rem;
+        }
 
         & ul {
             flex-grow: 1;
             font-weight: 800;
             font-family: Poppins Light;
-            line-height: 2rem;
+            // line-height: 2rem;
         }
         & ul:nth-child(2) {
-            flex-grow: 2;
+            flex-grow: 1;
             // background-color: black;
         }
     }
@@ -79,13 +114,19 @@
 .exp {
     padding-left: 3rem;
     border-left: 1px #bdbdbd solid;
+    margin-bottom: 5rem;
     &-icon{
         margin-left: -4.5rem;
-        margin-top: -1rem;
+        margin-top: -.5rem;
         margin-bottom: 2rem;
         //TODO
         background-color: white;
         width: min-content;
+
+        @media only screen and (max-width:1200px) {
+            margin-bottom: .5rem;
+            line-height: 1.5rem;
+        }
     }
     &-line{
         display: flex;
@@ -95,6 +136,9 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 2rem;
+        @media only screen and (max-width:1200px) {
+            margin-bottom: 1rem;
+        }
         & div{
             height: 20px;
         }
@@ -109,19 +153,48 @@
         font-size: 18px;
         font-family: Poppins Regular;
         font-weight: bolder;
+        @media only screen and (max-width:1200px) {
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+        } 
+        @media only screen and (max-width:520px) {
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            margin-left: -1.5rem;
+        }
+        
     }
     &-company{
         font-family: Poppins Light;
+        @media only screen and (max-width:1200px) {
+        display: flex;
+        margin-left: -1rem;
+        }
     }
     &-period{
         font-size: 16px;
         color: var(--color-grey-dark-3);
-        margin-left: auto;
+        position: absolute;
+        right: 6rem;
+        // margin-left: 1rem;
+        // background-color: yellow;
+        @media only screen and (max-width:1200px) {
+            font-size: 15px;
+        }
+        @media only screen and (max-width:520px) {
+            font-size: 14px;
+            right: 1rem;
+        }
 
         &::before{
-            padding-right: 1rem;
+            padding-right: 0.5rem;
             content: '/';
             opacity: .5;
+            @media only screen and (max-width:520px) {
+                padding-right: .2rem;
+            }
         }
     }
     &-context {

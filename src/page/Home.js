@@ -41,7 +41,9 @@ const Home = (props) => {
   return (
     <div className='container' style= {{backgroundImage:`url(${backgroundImage})`}}>
       {/* // <div className='container' style={{ backgroundImage:`url('${backgroundImage}')` }} > */}
-      <div className='overlay '>
+      {/* <div className='overlay slide-left '>
+      </div> */}
+
         <div className={`about-box ${show ? 'about-box-side' : ''}`} onClick={() => { setShow(false) }}>
           <div className="about-box-container">
             <span style={{ fontSize: '20px', fontWeight: 300, marginBottom: '10px' }}>Hi, I'm</span>
@@ -50,7 +52,7 @@ const Home = (props) => {
           </div>
 
         </div>
-        <div style={{ display: 'flex', justifyContent: 'end' }}>
+        <div style={{ display: 'flex', justifyContent: 'end', width:'100%' }}>
           <SideScreen show={show} setShow={setShow} onFocus={setShow} content={content} setContent={setContent} />
         </div>
 
@@ -82,7 +84,6 @@ const Home = (props) => {
             </div>
           </div>
         </div>
-      </div>
     </div >
   )
 }

@@ -6,3 +6,15 @@
     50% { opacity: 0.6; }
     100% { opacity: 1; }
   }
+
+@keyframes slide-left {
+  0% { transform:translateX(0) scaleY(1)
+     }
+  70% { transform:translateX(-0%) scaleY(.01) }
+  100% { transform:translateX(-100%) scaleY(0) }
+}
+// @keyframes slide-left {
+//   0% { transform:translateX(0)      }
+//   70% { transform:translateX(-90%) }
+//   100% { transform:translateX(-100%) }
+// }
