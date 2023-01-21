@@ -562,11 +562,12 @@
     box-shadow: 3px 2px 10px 3px rgba(123, 108, 108, 0.589); }
 
 .info-element {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  display: flex; }
   .info-element h5 {
     font-family: Poppins Light;
-    font-weight: 100;
-    font-size: 18px; }
+    font-weight: 800;
+    font-size: 16px; }
   .info-element p {
     font-family: Poppins Light;
     font-weight: 100;

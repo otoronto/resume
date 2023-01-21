@@ -25,14 +25,8 @@ const Home = (props) => {
   }
 
   const pickBackgroundImage = () => {
-
     const imageList = [lamba,flower,phone,matrix];
-      
     const image = imageList[Math.floor(Math.random() * imageList.length)];
-    console.log(Math.floor(Math.random() * imageList.length));
-    // console.log(imageList[1]);
-    // console.log(flower);
-
     return image;
   }
   useEffect(() => {
@@ -41,8 +35,8 @@ const Home = (props) => {
   return (
     <div className='container' style= {{backgroundImage:`url(${backgroundImage})`}}>
       {/* // <div className='container' style={{ backgroundImage:`url('${backgroundImage}')` }} > */}
-      {/* <div className='overlay slide-left '>
-      </div> */}
+      <div className='overlay slide-left '>
+      </div>
 
         <div className={`about-box ${show ? 'about-box-side' : ''}`} onClick={() => { setShow(false) }}>
           <div className="about-box-container">

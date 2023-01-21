@@ -7,12 +7,9 @@
     margin: 4rem;
     width: 100%;
     height: 100%;
-
     @media only screen and (max-width:600px) {
         margin: 2rem 1rem;
     }
-    
-
     &-header{
         display: block;
         font-size: 30px;
@@ -21,27 +18,22 @@
         margin-bottom: 2rem;
         letter-spacing: 2px;
     }
-
     &-block{
         display: flex;
         justify-content: space-between;
         @media only screen and (max-width:600px) {
             flex-direction: column;
         }
-
         &-input{
             display: flex;
             flex-direction: column;    
             width: 50%;
             margin-right: 2rem;
-
             @media only screen and (max-width:600px) {
                 width: auto;
                 margin-bottom: 4rem;
             }
-           
         }
-
         &-info{
             // margin-left: 4rem;
             width: 50%;
@@ -49,11 +41,9 @@
             @media only screen and (max-width:600px) {
                 width: auto;
             }
-
         }
     }
 }
-
 .text-input{
     // outline: none;
     // border: none;
@@ -68,11 +58,8 @@
     outline-style: hidden;
     outline: none;
     border-bottom: 1px rgb(189, 189, 189) solid;
-
-    
 }
 .input-button{
-
     color: white;
     background-color: rgb(48, 47, 47);
     padding: 1rem 3rem;
@@ -84,15 +71,13 @@
         box-shadow: 3px 2px 10px 3px rgba(123, 108, 108, 0.589);
     }
 }
-
 .info-element{
-
     margin-bottom: 2rem;
-
+    display: flex;
     & h5{
         font-family: Poppins Light;
-        font-weight: 100;
-        font-size: 18px;
+        font-weight: 800;
+        font-size: 16px;
     }
     & p{
         font-family: Poppins Light;

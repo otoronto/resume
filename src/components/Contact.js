@@ -1,4 +1,7 @@
 import React from 'react'
+import IconEmailOutline from '../icons/IconEmailOutline';
+import IconPhoneCall from '../icons/IconPhoneCall';
+import IconSignpost from '../icons/IconSignPost';
 
 const Contact = () => {
   return (
@@ -9,23 +12,32 @@ const Contact = () => {
           <input type='text' placeholder='Name' className='text-input'></input>
           <input type='text' placeholder='email' className='text-input'></input>
           <textarea rows='4' className='text-input'></textarea>
-          <button  className='input-button'>SEND MESSAGE</button>
+          <button className='input-button'>SEND MESSAGE</button>
         </div>
 
 
 
         <div className="contact-block-info">
           <div className='info-element'>
-            <h5>ADRESS</h5>
-            <p>223 House street, melbourne, texas</p>
+            <IconSignpost size='48' fill='#a0a0a0'/>
+            <div>
+              <h5>ADRESS</h5>
+              <p>223 House street, melbourne, texas</p>
+            </div>
           </div>
           <div className='info-element'>
-            <h5>CALL ME</h5>
-            <p>+63 234123 1</p>
+            <IconPhoneCall size='48' fill='#a0a0a0'/>
+            <div>
+              <h5>CALL ME</h5>
+              <p>+63 234123 1</p>
+            </div>
           </div>
           <div className='info-element'>
-            <h5>ENQUIRIES</h5>
-            <p>emrebasar1994@gmail.com</p>
+            <IconEmailOutline size='48' fill='#a0a0a0'/>
+            <div>
+              <h5>ENQUIRIES</h5>
+              <p>emrebasar1994@gmail.com</p>
+            </div>
           </div>
 
 
