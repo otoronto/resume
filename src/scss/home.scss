@@ -34,7 +34,7 @@ $border-header-color: rgba(#ffff, .3);
     }
 
 }
-.overlay{
+.landing-animation{
 height: 100%;
 width: 100%;
 // background-color: rgba(#000,.55);
@@ -43,10 +43,16 @@ position: absolute;
 width: 100%;
 z-index: 100;
 animation: slide-left 1s forwards;
-
 }
-
-
+.overlay{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity:.5;
+  }
 .about-box {
     height: 700px;
     width: 700px;

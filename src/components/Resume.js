@@ -17,13 +17,13 @@ const Resume = () => {
                 <div className='resume-info-column'>
                     <span><span className='resume-info-title'>Name:</span> Emre Başar</span>
                     <span><span className='resume-info-title'>Adress:</span> Melbourne, Australia</span>
-                    <span><span className='resume-info-title'>Phone:</span> +61 231412 3</span>
+                    <span><span className='resume-info-title'>Phone:</span> +61 0484 355992</span>
                     <span><span className='resume-info-title'>Interest:</span> Fulltime, Freelance</span>
                 </div>
                 <div className='resume-info-column'>
                     <span><span className='resume-info-title'>Date of birth:</span> 30-08-1994</span>
                     <span><span className='resume-info-title'>Email:</span> emrebasar1994@gmail.com</span>
-                    <span><span className='resume-info-title'>Skype:</span> skype.skype</span>
+                    {/* <span><span className='resume-info-title'>Skype:</span> skype.skype</span> */}
                 </div>
             </div>
 

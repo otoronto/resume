@@ -1,0 +1,47 @@
+.portfolio-container {
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 6rem;
+    color: rgb(60, 60, 60);
+    animation: display-fade 1s linear forwards;
+
+    @media only screen and (max-width:1200px) {
+        margin: 0 2rem;
+    }
+}
+
+.portfolio-header {
+    display: block;
+    font-size: 30px;
+    border-bottom: 1px rgb(189, 189, 189) solid;
+    padding: .5rem 0;
+    margin: 2rem 0;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.portfolio-item{
+    margin : 2rem 2rem; 
+    &-header{
+        font-size: 20px;
+        font-weight: 1000;
+        margin-bottom: 1rem;
+    }
+    &-info{
+        margin: 0 1rem;
+        font-size: 15px;
+        // font-weight: 300;
+        font-family: 'Poppins Light';
+    }
+    &-images{
+        display: flex;
+        flex-direction: column;
+        img {
+            margin: 1rem auto;
+            width: 700px;
+
+        }
+        
+    }
+}
